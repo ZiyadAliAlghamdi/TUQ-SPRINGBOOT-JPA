@@ -49,6 +49,7 @@ public class MerchantService {
         }
         //id will be set using hibernate
         oldMerchant.setName(merchant.getName());
+        merchantRepository.save(oldMerchant);
         return true;
     }
 

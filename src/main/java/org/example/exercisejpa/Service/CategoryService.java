@@ -39,6 +39,7 @@ public class CategoryService {
         }
 
         oldCategory.setName(category.getName());
+        categoryRepository.save(oldCategory);
         return true;
     }
 

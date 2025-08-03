@@ -55,6 +55,7 @@ public class MerchantStockService {
     oldMerchantStock.setProductID(merchantStock.getProductID());
     oldMerchantStock.setMerchantID(merchantStock.getMerchantID());
     oldMerchantStock.setStock(merchantStock.getStock());
+    merchantStockRepository.save(oldMerchantStock);
     return true;
     }
 
